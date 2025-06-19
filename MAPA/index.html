@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Equipos de Computo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>TechStore - Equipos de Computo</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#formulario-pedido">Pedidos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#Ubicacion">Ubicacion</a></li>
+            </ul> 
+        </nav>       
+    </header>
+        <main>
+            <section id="productos">
+            <h2>Catalogo de Productos</h2>
+            <table>
+            <thead>
+                <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/laptop.jpg"/></td>
+                    <td>Laptop Gamer</td>
+                    <td>Intel i7 16GB RAM NVIDIA</td>
+                    <td>$1900</td> 
+                </tr>
+                <tr>
+                    <td><img src="img/monitor.jpg"/></td>
+                    <td>Monitor 27 4K</td>
+                    <td>Monitor 4k 360hz</td>
+                    <td>$1200</td> 
+                </tr>
+                <tr>
+                    <td><img src="img/mouse.jpg"/></td>
+                    <td>Logitech G203</td>
+                    <td>Tecnologia Hero</td>
+                    <td>$230</td> 
+                </tr>
+            </tbody>
+            </table> 
+        </section>
+        <section id="formulario-pedido">
+            <h2>Realiza tu Pedido</h2>
+            <form action="#" method="post" id="pedidoform">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electronico</label>
+                <input type="text" id="correo" name="correo" required>
+
+                <label for="producto">Producto</label>
+                <select id="producto" name="producto" required>
+                <option value="">Seleccione un Producto</option>
+                <option value="laptop">Laptop</option>
+                <option value="monitor">Monitor</option>
+                <option value="mouse">Mouse</option>
+                </select>
+                
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10">
+                
+                <button></button>
+            </form>      
+        </section>
+        <section id="Ubicacion" >
+            <h2>Nuestra Ubicacion</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1966.0246689151656!2d-76.94941153438552!3d-12.073193539762894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e4f37949e7%3A0x5137ea2bdf77801f!2sAgencia%20Digital!5e1!3m2!1ses-419!2spe!4v1750350926042!5m2!1ses-419!2spe" width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+<footer>
+    <p>Copy 2025 TechStore. Todos los Derechos Reservados</p>
+</footer>
+
+
+
+</body>
+</html>
